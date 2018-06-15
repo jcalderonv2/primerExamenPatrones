@@ -1,27 +1,26 @@
 package primerExamen.objetos;
 
 public class Carta {
-	
-	private String nombre;
+
+	private Nombre nombre;
 	private int valor;
-	private String palo;
+	private Palo palo;
 
 	public Carta() {
-		
+
 	}
-	
-	public Carta(String nombre, int valor, String palo) {
-		super();
+
+	public Carta(Nombre nombre, Palo palo, int valor) {
 		this.nombre = nombre;
 		this.valor = valor;
 		this.palo = palo;
 	}
 
-	public String getNombre() {
+	public Nombre getNombre() {
 		return nombre;
 	}
 
-	public void setNombre(String nombre) {
+	public void setNombre(Nombre nombre) {
 		this.nombre = nombre;
 	}
 
@@ -33,11 +32,11 @@ public class Carta {
 		this.valor = valor;
 	}
 
-	public String getPalo() {
+	public Palo getPalo() {
 		return palo;
 	}
 
-	public void setPalo(String palo) {
+	public void setPalo(Palo palo) {
 		this.palo = palo;
 	}
 
