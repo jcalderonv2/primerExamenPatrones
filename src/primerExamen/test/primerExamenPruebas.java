@@ -14,7 +14,17 @@ public class primerExamenPruebas {
 	@Test
 	public void testValores() throws Exception {
 
-		assertEquals(3, valor.crearCarta(Nombre.As, Palo.Escudos, 3).getValor());
+		assertEquals(1, valor.crearCarta(Nombre.As, Palo.Escudos, 1).getValor());
+
+	}
+
+	@Test
+	public void testCompararCartas() throws Exception {
+
+		Carta crearCarta = new Carta(Nombre.As, Palo.Gotas, 1);
+
+		assertEquals(crearCarta.getValor(), valor.crearCarta(Nombre.As, Palo.Escudos, 1).getValor());
+		assertEquals(crearCarta.getNombre(), valor.crearCarta(Nombre.As, Palo.Flores, 1).getNombre());
 
 	}
 

@@ -103,7 +103,6 @@ public class Cl {
 	}
 
 	public Carta nuevaCarta(Nombre nombre, Palo palo) throws Exception {
-		
 
 		int valor = asignarValorCarta(nombre);
 

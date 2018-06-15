@@ -3,8 +3,8 @@ package primerExamen.objetos;
 public class Carta {
 
 	private Nombre nombre;
-	private int valor;
 	private Palo palo;
+	private int valor;
 
 	public Carta() {
 
@@ -12,8 +12,9 @@ public class Carta {
 
 	public Carta(Nombre nombre, Palo palo, int valor) {
 		this.nombre = nombre;
-		this.valor = valor;
 		this.palo = palo;
+		this.valor = valor;
+
 	}
 
 	public Nombre getNombre() {
@@ -42,7 +43,7 @@ public class Carta {
 
 	@Override
 	public String toString() {
-		return "Carta [nombre=" + nombre + ", valor=" + valor + ", palo=" + palo + "]";
+		return "Carta [nombre=" + nombre + ", palo=" + palo + ", valor=" + valor + "]";
 	}
 
 }
