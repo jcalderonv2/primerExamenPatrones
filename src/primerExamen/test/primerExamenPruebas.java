@@ -50,4 +50,21 @@ public class primerExamenPruebas {
 
 	}
 
+	@Test
+	public void mesaLlena() {
+
+		Mesa mesa = new Mesa();
+
+		assertTrue(mesa.mesaLlena());
+
+	}
+
+	@Test
+	public void testInicioJuego() {
+
+		Mesa mesa = new Mesa();
+		assertTrue(mesa.inicio());
+
+	}
+
 }
