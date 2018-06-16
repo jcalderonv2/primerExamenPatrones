@@ -1,6 +1,8 @@
 package primerExamen.test;
 
 import static org.junit.Assert.assertEquals;
+import static org.junit.Assert.assertFalse;
+import static org.junit.Assert.assertTrue;
 
 import org.junit.Test;
 
@@ -35,6 +37,17 @@ public class primerExamenPruebas {
 		Naipe deck = new Naipe();
 
 		assertEquals(tamanno, deck.crearDeck().size());
+	}
+
+	@Test
+	public void testShuffleDeck() throws Exception {
+
+		Repartidor deck = new Repartidor();
+
+		assertFalse(deck.isShuffled());
+		deck.shuffleDeck();
+		assertTrue(deck.isShuffled());
+
 	}
 
 }
